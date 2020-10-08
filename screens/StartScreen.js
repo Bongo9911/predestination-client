@@ -15,12 +15,10 @@ export default function StartScreen({ navigation }) {
         (code.length === 6) ? navigation.navigate('SeekerWaitingScreen', { code }) : handleError();
     };
 
+
     return (
         <View style={styles.container}>
-            <View style={styles.titleSection}>
-                <Text>PreDestination</Text>
-                <Text>Insert Cool Logo</Text>
-            </View>
+
 
             <View style={styles.entrySection}>
 
@@ -37,7 +35,9 @@ export default function StartScreen({ navigation }) {
                 <View style={styles.joinButton}>
                     <Button title='Join' onPress={handleJoinPress} />
                 </View>
-
+                <View style={styles.textBetween}>
+                    <Text>or</Text>
+                </View>
                 <View style={styles.createButton}>
                     <Button title="Create" onPress={() => navigation.navigate('KeeperListScreen')} />
                 </View>
@@ -54,6 +54,7 @@ export default function StartScreen({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
+        paddingTop: 20,
         flex: 1,
         flexDirection: 'column',
         alignItems: 'center',
@@ -74,16 +75,22 @@ const styles = StyleSheet.create({
     input: {
         fontSize: 70,
         textAlign: 'center',
+
     },
     joinButton: {
         paddingTop: 20,
-        width: '50%',
+        width: '30%',
+        borderRadius: 50,
     },
     createButton: {
-        paddingTop: 15,
+
         width: '30%',
         textAlign: 'center',
     },
+    textBetween: {
+        padding: 20,
+        fontSize: 70,
+    }
 
 });
 

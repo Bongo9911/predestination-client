@@ -28,7 +28,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="StartScreen" component={StartScreen} options={{ title: 'StartScreen' }} />
+        <Stack.Screen name="StartScreen" component={StartScreen} options={{ title: 'Join Game', headerStyle: { backgroundColor: '#FFC800' } }} />
         <Stack.Screen name="TestScreen" component={testScreen} options={{ title: 'TestScreen ' }} />
 
         <Stack.Screen name="SeekerWaitingScreen" component={SeekerWaitingScreen} options={{ title: 'SeekerWaitingScreen' }} />
