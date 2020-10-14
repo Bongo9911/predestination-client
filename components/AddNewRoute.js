@@ -20,7 +20,7 @@ export default function AddNewRoute({ submitHandler }) {
         <View>
             <View>
                 {/* New scavenger hunt label and text input field */}
-                <Text style={styles.header}>Enter a scavenger hunt name:</Text>
+                {/*<Text style={styles.header}>Enter a scavenger hunt name:</Text>*/}
                 <TextInput
                     style={styles.nameInput}
                     placeholder='Enter name'
@@ -35,7 +35,7 @@ export default function AddNewRoute({ submitHandler }) {
             <View>
                 {/* TODO: Add timer input */}
             </View>
-            <View>
+            <View style={styles.Button}>
                 <Button title="OK" onPress={() => submitHandler(name)}/>
             </View>
         </View>
@@ -48,10 +48,18 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
         },
     nameInput: {
-        marginBottom: 10,
-        paddingHorizontal: 10,
-        paddingVertical: 6,
-        borderBottomWidth: 1,
-        borderBottomColor: '#ddd'
+        borderColor: '#bbb',
+        borderWidth: 1,
+        borderRadius: 10,
+        textAlign: 'center',
+        marginTop: 20,
+        marginLeft: 20,
+        marginRight: 20
     },
+    Button: {
+        paddingVertical: 20,
+        paddingHorizontal: 20
+
+
+    }
 });
