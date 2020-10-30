@@ -12,4 +12,4 @@
 ~~1. Run `npm install`~~
 ~~2. Run `expo start` to start the application.~~
 
-~~This is currently a work in progress. Please message us in Slack if you have any further inquiries or suggestions. ~~
+~~This is currently a work in progress. Please message us in Slack if you have any further inquiries or suggestions~~
