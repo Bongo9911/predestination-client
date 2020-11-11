@@ -29,7 +29,7 @@ export const globalStyles = StyleSheet.create({
   //shared:header.js
   topRightMenuIcon: {
     margin: 15, //shifts the icon to the left
-    color: "white",
+    color: "black",
   },
   // start styles from StartScreen.js
 
@@ -37,11 +37,11 @@ export const globalStyles = StyleSheet.create({
   // start screen
   startNavigationTitle: {
     // fontFamily: 'constan-bold',
-    color: 'white',
+    color: 'black',
   },
   startNavigationHeader: {
     // fontFamily: "constan",
-    backgroundColor: '#A2D683',
+    backgroundColor: 'white',
     opacity: 0.7,
   },
   startNavigationDrawer: {
