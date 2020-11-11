@@ -21,7 +21,7 @@ export default function DrawerScreen({ setLoginStatus, route }) {
                 options={{
                     title: 'Home',
                     drawerIcon: () => (
-                        <Icon name="home" size={25} color="#5CDB95" />
+                        <Icon name="home" size={25} color="black" />
                     )
                 }}
                 name="Home" component={HomeStack}
@@ -30,7 +30,7 @@ export default function DrawerScreen({ setLoginStatus, route }) {
                 options={{
                     title: 'Account',
                     drawerIcon: () => (
-                        <Icon name="account" size={25} color="#5CDB95" />
+                        <Icon name="account" size={25} color="black" />
                     )
                 }}
                 name="Account" component={AccountStack} />
